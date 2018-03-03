@@ -12,12 +12,12 @@ class Triangle:
   self.side1 = side1
   self.side2 = side2
   self.side3 = side3
-  print ("Initialised Triagle object")
+  print ("Initialised Triagle super class [" +  str(side1) + "," + str(side2) + "," + str(side3) + "]")
 
 class Triangle_Utilities(Triangle):
  
  def __init__(self, side1, side2, side3):
-  print ("Initialised Utils object")
+  print ("Initialised Utils Child class" )
   super(Triangle_Utilities, self).__init__(side1, side2, side3)
 
  def get_area(self):
